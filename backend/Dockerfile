@@ -23,9 +23,17 @@ COPY . .
 
 # Usuário não-root
 RUN useradd -m appuser && chown -R appuser:appuser /app
-USER appuser
+RUN useradd -m -u 1000 -U appuser && chown -R appuser:appuser /app
 
-# Inicia Gunicorn (UvicornWorker) sem reload
+# Copia o entrypoint e dá permissão de execução
+COPY docker/entrypoint.sh /usr/local/bin/entrypoint.sh
+RUN chmod 755 /usr/local/bin/entrypoint.sh
+
+# Rode como root no ENTRYPOINT (para chown) e depois o script troca para appuser
+USER root
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
+
+# O CMD é passado para o entrypoint e será executado como appuser
 CMD ["gunicorn", "app.main:app", \
      "--workers", "2", \
      "--worker-class", "uvicorn.workers.UvicornWorker", \

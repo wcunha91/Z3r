@@ -79,19 +79,33 @@ services:
       - traefik.http.middlewares.api-headers.headers.customrequestheaders.X-Internal-Proxy=1
     networks: [web]
 
-  # ----------------------------------------------------------
-  # (Opcional) Scheduler como processo separado
-  # ----------------------------------------------------------
-  scheduler:
-    image: z3reports/backend:latest
-    container_name: z3-scheduler
+  web:
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+    image: z3reports/web:latest
+    container_name: z3-web
     restart: unless-stopped
-    env_file:
-      - ./.env
     environment:
-      - ENV=production
-      - TZ=America/Sao_Paulo
-    command: ["python", "-m", "app.scripts.run_scheduler"]
-    volumes:
-      - ./storage:/app/storage
+      # Somente se usar env.js (runtime). Se não usar, pode remover.
+      - API_BASE_URL=/api
+      - PUBLIC_PATH=/
+    expose:
+      - "80"
+    labels:
+      - traefik.enable=true
+
+      # Roteia TODO o restante do domínio para o frontend (exceto /api que já tem roteador próprio)
+      - traefik.http.routers.web.rule=Host(`app.z3report.com`)
+      - traefik.http.routers.web.entrypoints=websecure
+      - traefik.http.routers.web.tls.certresolver=letsencrypt
+      - traefik.http.routers.web.priority=5
+
+      # Middlewares globais do Traefik (já definidos em dynamic.yml)
+      - traefik.http.routers.web.middlewares=sec-headers@file,compress@file
+
+      # Serviço: porta interna 80 do Nginx
+      - traefik.http.services.web.loadbalancer.server.port=80
+
     networks: [web]
+
