@@ -1,0 +1,178 @@
+/* RUACH Design System - Cores da marca e gradientes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "react-datepicker/dist/react-datepicker.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Z3 Brand Colors (mantendo os nomes das variáveis) */
+    --ruach-teal-deep: 242 43% 42%;     /* #3F3D99  – Indigo/Violeta (Primary) */
+    --ruach-teal-light: 213 38% 60%;    /* #7192BE  – Azul médio (Secondary) */
+    --ruach-gold: 168 64% 56%;          /* #46D6BB  – Aqua/Menta (Accent) */
+    --ruach-blue-dark: 246 48% 33%;     /* #2E2A7B  – Indigo escuro p/ textos */
+    --ruach-white: 0 0% 100%;           /* #FFFFFF  – Neutral */
+
+    /* Semantic Design System (derivados) */
+    --background: var(--ruach-white);
+    --foreground: var(--ruach-blue-dark);
+
+    --card: var(--ruach-white);
+    --card-foreground: var(--ruach-blue-dark);
+
+    --popover: var(--ruach-white);
+    --popover-foreground: var(--ruach-blue-dark);
+
+    --primary: var(--ruach-teal-deep);
+    --primary-foreground: var(--ruach-white);
+
+    --secondary: var(--ruach-teal-light);
+    --secondary-foreground: var(--ruach-white);
+
+    --muted: 230 35% 96%;
+    --muted-foreground: var(--ruach-blue-dark);
+
+    /* usamos “accent” como a cor aqua/menta da marca */
+    --accent: var(--ruach-gold);
+    --accent-foreground: var(--ruach-white);
+
+    --destructive: 0 78% 56%;
+    --destructive-foreground: var(--ruach-white);
+
+    --border: 228 28% 88%;
+    --input: 228 28% 94%;
+    --ring: var(--ruach-teal-light);
+
+    --radius: 0.5rem;
+
+    /* Gradientes ajustados à paleta Z3 */
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(var(--ruach-teal-deep)) 0%,
+      hsl(var(--ruach-teal-light)) 100%
+    );
+    --gradient-gold: linear-gradient(
+      135deg,
+      hsl(var(--ruach-gold)) 0%,
+      hsl(168 60% 70%) 100%
+    );
+    --gradient-subtle: linear-gradient(
+      180deg,
+      hsl(var(--ruach-white)),
+      hsl(228 28% 98%)
+    );
+
+    /* Sidebar */
+    --sidebar-background: var(--ruach-white);
+    --sidebar-foreground: var(--ruach-blue-dark);
+    --sidebar-primary: var(--ruach-teal-deep);
+    --sidebar-primary-foreground: var(--ruach-white);
+    --sidebar-accent: var(--ruach-teal-light);
+    --sidebar-accent-foreground: var(--ruach-white);
+    --sidebar-border: 228 28% 88%;
+    --sidebar-ring: var(--ruach-teal-light);
+
+    /* FX */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow-ruach: 0 4px 20px hsl(var(--ruach-teal-deep) / 0.10);
+    --shadow-ruach-glow: 0 0 40px hsl(var(--ruach-teal-light) / 0.20);
+  }
+
+
+    .dark {
+    /* Base surfaces */
+    --background: 235 35% 8%;          /* #0F1220 aprox – fundo quase preto com viés índigo */
+    --foreground: 0 0% 98%;            /* branco suave para texto */
+
+    --card: 235 32% 10%;               /* camadas sobre o fundo */
+    --card-foreground: var(--foreground);
+
+    --popover: 235 32% 12%;
+    --popover-foreground: var(--foreground);
+
+    /* Cores da marca no dark (mantendo variáveis) */
+    --primary: 168 64% 56%;            /* usa o Aqua/Menta como destaque primário */
+    --primary-foreground: 235 35% 10%; /* texto/símbolos sobre o primary */
+
+    --secondary: 213 38% 60%;          /* azul médio */
+    --secondary-foreground: 235 35% 10%;
+
+    --muted: 235 25% 16%;              /* chips, linhas, inputs inativos */
+    --muted-foreground: 0 0% 84%;
+
+    --accent: 242 43% 42%;             /* índigo/violeta como “accent” no dark */
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 235 24% 22%;
+    --input: 235 24% 18%;
+    --ring: 168 64% 56%;               /* realce (focus) em aqua */
+
+    /* Gradientes (ajustados para o dark) */
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(var(--accent)) 0%,            /* índigo */
+      hsl(var(--secondary)) 100%        /* azul médio */
+    );
+    --gradient-gold: linear-gradient(
+      135deg,
+      hsl(var(--primary)) 0%,           /* aqua */
+      hsl(168 60% 45%) 100%
+    );
+    --gradient-subtle: linear-gradient(
+      180deg,
+      hsl(235 35% 10%),
+      hsl(235 35% 8%)
+    );
+
+    /* Sidebar no dark */
+    --sidebar-background: 235 35% 9%;
+    --sidebar-foreground: var(--foreground);
+    --sidebar-primary: var(--primary);
+    --sidebar-primary-foreground: var(--primary-foreground);
+    --sidebar-accent: var(--secondary);
+    --sidebar-accent-foreground: var(--secondary-foreground);
+    --sidebar-border: var(--border);
+    --sidebar-ring: var(--ring);
+
+    /* FX */
+    --shadow-ruach: 0 4px 24px hsl(235 35% 4% / 0.55);
+    --shadow-ruach-glow: 0 0 40px hsl(var(--primary) / 0.25);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  /* RUACH Button Variants */
+  .btn-ruach-primary {
+    @apply bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:shadow-[var(--shadow-ruach)] transition-[var(--transition-smooth)];
+  }
+  
+  .btn-ruach-gold {
+    @apply bg-gradient-to-r from-accent to-[hsl(50_35%_65%)] text-accent-foreground hover:shadow-[var(--shadow-ruach-glow)] transition-[var(--transition-smooth)];
+  }
+
+  /* RUACH Card Effects */
+  .card-ruach {
+    @apply bg-card border-border shadow-[var(--shadow-ruach)] hover:shadow-[var(--shadow-ruach-glow)] transition-[var(--transition-smooth)];
+  }
+
+  /* RUACH Input Styles */
+  .input-ruach {
+    @apply border-input bg-background focus:ring-2 focus:ring-ring focus:border-transparent transition-[var(--transition-smooth)];
+  }
+}
