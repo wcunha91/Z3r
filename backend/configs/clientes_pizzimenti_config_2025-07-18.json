@@ -1,0 +1,119 @@
+{
+  "hostgroup": {
+    "id": "59",
+    "name": "Clientes/Pizzimenti"
+  },
+  "hosts": [
+    {
+      "id": "10604",
+      "name": "Pizzimenti - Matriz",
+      "graphs": [
+        {
+          "id": "2838",
+          "name": "*CPU",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "2839",
+          "name": "*Conexoes",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "2840",
+          "name": "*RAM",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "4047",
+          "name": "Disponibilidade - X4",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3382",
+          "name": "Trafego - X4 (WAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3378",
+          "name": "Trafego - X0 (LAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3379",
+          "name": "Trafego - X1 (WAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3380",
+          "name": "Trafego - X2 (WAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3381",
+          "name": "Trafego - X3 (LAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3383",
+          "name": "Trafego - X3:V100 (WLAN_Mobile)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3384",
+          "name": "Trafego - X3:V101 (WLAN_Mobile2)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3385",
+          "name": "Trafego - X3:V110 (WLAN_Guest)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "incidents": {
+      "enabled": false,
+      "value": 0
+    },
+    "openProblems": {
+      "enabled": false,
+      "value": [],
+      "columns": [
+        "name",
+        "severity",
+        "tags",
+        "clock"
+      ]
+    },
+    "topTriggers": {
+      "enabled": false,
+      "value": [],
+      "chartType": "bar"
+    }
+  },
+  "emails": [
+    "fabio@pizzi.com.br",
+    "tec@athenasecurity.com.br",
+    "loltramari@athenasecurity.com.br"
+  ],
+  "frequency": "weekly",
+  "logo_filename": "logohostgroup59.jpg",
+  "analyst": "Leonardo Oltramari",
+  "comments": "",
+  "last_generated": "",
+  "last_sent_period": "2025-33",
+  "last_sent": "2025-08-25T13:35:26.378313"
+}

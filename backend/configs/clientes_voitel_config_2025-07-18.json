@@ -1,0 +1,167 @@
+{
+  "hostgroup": {
+    "id": "68",
+    "name": "Clientes/Voitel"
+  },
+  "hosts": [
+    {
+      "id": "10627",
+      "name": "Voitel - Datacenter",
+      "graphs": [
+        {
+          "id": "2970",
+          "name": "*CPU",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "2971",
+          "name": "*Conexoes",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "2972",
+          "name": "*RAM",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3711",
+          "name": "Disponibilidade - X1",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3088",
+          "name": "Trafego - X1 (WAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3713",
+          "name": "Disponibilidade - X3",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3089",
+          "name": "Trafego - X2 (DMZ)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3087",
+          "name": "Trafego - X0 (LAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3091",
+          "name": "Trafego - X4 (HA-Link)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        }
+      ]
+    },
+    {
+      "id": "10628",
+      "name": "Voitel - Matriz",
+      "graphs": [
+        {
+          "id": "2976",
+          "name": "*CPU",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "2977",
+          "name": "*Conexoes",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "2978",
+          "name": "*RAM",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3862",
+          "name": "Disponibilidade - X1",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3124",
+          "name": "Trafego - X1 (WAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3864",
+          "name": "Disponibilidade - X3",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3126",
+          "name": "Trafego - X3 (WAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3123",
+          "name": "Trafego - X0 (Portshield Host)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3130",
+          "name": "Trafego - X0:V10 (WLAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3131",
+          "name": "Trafego - X0:V20 (LAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "incidents": {
+      "enabled": false,
+      "value": 0
+    },
+    "openProblems": {
+      "enabled": false,
+      "value": [],
+      "columns": [
+        "name",
+        "severity",
+        "tags",
+        "clock"
+      ]
+    },
+    "topTriggers": {
+      "enabled": false,
+      "value": [],
+      "chartType": "bar"
+    }
+  },
+  "emails": [
+    "suporte_ti@voitel.com.br",
+    "tec@athenasecurity.com.br",
+    "loltramari@athenasecurity.com.br"
+  ],
+  "frequency": "weekly",
+  "logo_filename": "logohostgroup68.png",
+  "analyst": "Leonardo Oltramari",
+  "comments": "",
+  "last_generated": "",
+  "last_sent_period": "2025-33",
+  "last_sent": "2025-08-25T13:39:40.336775"
+}

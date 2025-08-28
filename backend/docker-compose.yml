@@ -1,0 +1,97 @@
+version: "3.9"
+
+networks:
+  web:
+    name: z3report-web
+    driver: bridge
+
+services:
+  # ----------------------------------------------------------
+  # Traefik - Reverse Proxy + TLS (Let's Encrypt) + Roteamento
+  # ----------------------------------------------------------
+  traefik:
+    image: traefik:v2.10
+    container_name: traefik
+    restart: unless-stopped
+    ports:
+      - "80:80"      # HTTP (redirecionado para HTTPS)
+      - "443:443"    # HTTPS
+    command:
+      # Habilita provedor Docker (lendo labels deste compose)
+      - --providers.docker=true
+      - --providers.docker.exposedbydefault=false
+      # Carrega middlewares de arquivo dinâmico
+      - --providers.file.filename=/etc/traefik/dynamic.yml
+
+      # EntryPoints HTTP/HTTPS + redirecionamento automático
+      - --entrypoints.web.address=:80
+      - --entrypoints.websecure.address=:443
+      - --entrypoints.web.http.redirections.entrypoint.to=websecure
+      - --entrypoints.web.http.redirections.entrypoint.scheme=https
+
+      # Let's Encrypt (ACME) via HTTP-01
+      - --certificatesresolvers.letsencrypt.acme.email=z3@z3tecnologia.com
+      - --certificatesresolvers.letsencrypt.acme.storage=/acme.json
+      - --certificatesresolvers.letsencrypt.acme.httpchallenge.entrypoint=web
+
+      # Logs
+      - --log.level=INFO
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./docker/traefik/acme.json:/acme.json
+      - ./docker/traefik/dynamic.yml:/etc/traefik/dynamic.yml:ro
+    networks: [web]
+
+  # ----------------------------------------------------------
+  # Backend FastAPI (Gunicorn + UvicornWorker)
+  # ----------------------------------------------------------
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: z3reports/backend:latest
+    container_name: z3-api
+    restart: unless-stopped
+    env_file:
+      - ./.env
+    environment:
+      - ENV=production                 # Desliga CORS dev e docs (se configurado)
+      - ROOT_PATH=/api                 # Backend está sob /api (Traefik)
+      - TZ=America/Sao_Paulo
+    volumes:
+      - ./storage:/app/storage         # Persistência local
+    expose:
+      - "8000"                         # Só para a rede do compose
+    labels:
+      - traefik.enable=true
+
+      # Roteador principal do backend: Host + PathPrefix /api
+      - traefik.http.routers.api.rule=Host(`app.z3report.com`) && PathPrefix(`/api`)
+      - traefik.http.routers.api.entrypoints=websecure
+      - traefik.http.routers.api.tls.certresolver=letsencrypt
+      - traefik.http.routers.api.priority=20
+
+      # Serviço aponta para porta interna do container
+      - traefik.http.services.api.loadbalancer.server.port=8000
+
+      # Middlewares: segurança + compressão (do arquivo dinâmico) + header interno
+      - traefik.http.routers.api.middlewares=sec-headers@file,compress@file,api-headers
+      - traefik.http.middlewares.api-headers.headers.customrequestheaders.X-Internal-Proxy=1
+    networks: [web]
+
+  # ----------------------------------------------------------
+  # (Opcional) Scheduler como processo separado
+  # ----------------------------------------------------------
+  scheduler:
+    image: z3reports/backend:latest
+    container_name: z3-scheduler
+    restart: unless-stopped
+    env_file:
+      - ./.env
+    environment:
+      - ENV=production
+      - TZ=America/Sao_Paulo
+    command: ["python", "-m", "app.scripts.run_scheduler"]
+    volumes:
+      - ./storage:/app/storage
+    networks: [web]

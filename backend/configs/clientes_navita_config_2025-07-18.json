@@ -1,0 +1,125 @@
+{
+  "hostgroup": {
+    "id": "77",
+    "name": "Clientes/Navita"
+  },
+  "hosts": [
+    {
+      "id": "10697",
+      "name": "Navita - OCI",
+      "graphs": [
+        {
+          "id": "10821",
+          "name": "FortiGate: CPU utilization",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10823",
+          "name": "FortiGate: Memory usage",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10824",
+          "name": "FortiGate: Memory utilization",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "11478",
+          "name": "Interface Algar(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "11162",
+          "name": "Interface port1(WAN): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "11161",
+          "name": "Interface port2(LAN): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "11477",
+          "name": "Interface RENDIMENTO(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "11559",
+          "name": "Interface SICREDI(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "11159",
+          "name": "Interface ssl.root(SSL VPN interface): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "11503",
+          "name": "Interface SUZANO(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "11349",
+          "name": "Interface TECBAN(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "11550",
+          "name": "Interface TIM(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "11350",
+          "name": "Interface VIVO(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "incidents": {
+      "enabled": false,
+      "value": 0
+    },
+    "openProblems": {
+      "enabled": false,
+      "value": [],
+      "columns": [
+        "name",
+        "severity",
+        "tags",
+        "clock"
+      ]
+    },
+    "topTriggers": {
+      "enabled": false,
+      "value": [],
+      "chartType": "bar"
+    }
+  },
+  "emails": [
+    "infraestrutura@navita.com.br",
+    "tec@athenasecurity.com.br",
+    "loltramari@athenasecurity.com.br"
+  ],
+  "frequency": "weekly",
+  "logo_filename": "logohostgroup77.jpg",
+  "analyst": "Leonardo Oltramari",
+  "comments": "",
+  "last_generated": "",
+  "last_sent_period": "2025-33",
+  "last_sent": "2025-08-25T13:34:12.637535"
+}

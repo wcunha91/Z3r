@@ -1,0 +1,314 @@
+{
+  "hostgroup": {
+    "id": "32",
+    "name": "Clientes/Catupiry"
+  },
+  "hosts": [
+    {
+      "id": "10532",
+      "name": "Catupiry - CD",
+      "graphs": [
+        {
+          "id": "2397",
+          "name": "*CPU",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "2398",
+          "name": "*Conexoes",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "2399",
+          "name": "*RAM",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3871",
+          "name": "Disponibilidade - X2",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3194",
+          "name": "Trafego - X2 (WAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "4747",
+          "name": "Disponibilidade - X4",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3196",
+          "name": "Trafego - X4 (WAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "8925",
+          "name": "Disponibilidade - X5",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "8924",
+          "name": "Trafego - X5 (WAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3192",
+          "name": "Trafego - X0 (LAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "4944",
+          "name": "Trafego - X0:V70 (Wlan_guest)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        }
+      ]
+    },
+    {
+      "id": "10534",
+      "name": "Catupiry  - Matriz",
+      "graphs": [
+        {
+          "id": "3060",
+          "name": "*CPU",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3061",
+          "name": "*Conexoes",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3062",
+          "name": "*RAM",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3882",
+          "name": "Disponibilidade - X1",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3208",
+          "name": "Trafego - X1 (WAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "7633",
+          "name": "Disponibilidade - X3",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "7632",
+          "name": "Trafego - X3 (WAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "9809",
+          "name": "Disponibilidade - X5",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "9808",
+          "name": "Trafego - X5 (WAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3207",
+          "name": "Trafego - X0 (LAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3212",
+          "name": "Trafego - X0:V70 (WLAN_Guest)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "7631",
+          "name": "Trafego - X23 (HA-Link)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        }
+      ]
+    },
+    {
+      "id": "10535",
+      "name": "Catupiry - Santa Fé",
+      "graphs": [
+        {
+          "id": "2415",
+          "name": "*CPU",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "2416",
+          "name": "*Conexoes",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "2417",
+          "name": "*RAM",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3892",
+          "name": "Disponibilidade - X1",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3223",
+          "name": "Trafego - X1 (WAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "8177",
+          "name": "Disponibilidade - X3",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3225",
+          "name": "Trafego - X3 (WAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3222",
+          "name": "Trafego - X0 (Portshield Host)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3227",
+          "name": "Trafego - X0:V70 (Wlan_guest)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        }
+      ]
+    },
+    {
+      "id": "10848",
+      "name": "Catupiry - Santa Vitoria",
+      "graphs": [
+        {
+          "id": "10435",
+          "name": "*CPU",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10436",
+          "name": "*Conexoes",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10437",
+          "name": "*RAM",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10445",
+          "name": "Disponibilidade - X1",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10439",
+          "name": "Trafego - X1 (WAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10448",
+          "name": "Disponibilidade - X5",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10443",
+          "name": "Trafego - X5 (WAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10438",
+          "name": "Trafego - X0 (Portshield Host)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10444",
+          "name": "Trafego - X0:V70 (Wlan_guest)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "incidents": {
+      "enabled": false,
+      "value": 0
+    },
+    "openProblems": {
+      "enabled": false,
+      "value": [],
+      "columns": [
+        "name",
+        "severity",
+        "tags",
+        "clock"
+      ]
+    },
+    "topTriggers": {
+      "enabled": false,
+      "value": [],
+      "chartType": "bar"
+    }
+  },
+  "emails": [
+    "admrede@catupiry.com.br",
+    "tec@athenasecurity.com.br",
+    "loltramari@athenasecurity.com.br",
+    "jorge.lima@catupiry.com.br",
+    "felipe.morpanini@catupiry.com.br",
+    "comercial@athenasecurity.com.br"
+  ],
+  "frequency": "weekly",
+  "logo_filename": "logohostgroup32.png",
+  "analyst": "Leonardo Oltramari",
+  "comments": "",
+  "last_generated": "",
+  "last_sent_period": "2025-33",
+  "last_sent": "2025-08-25T12:56:21.184794"
+}

@@ -1,0 +1,179 @@
+{
+  "hostgroup": {
+    "id": "39",
+    "name": "Clientes/Engelux"
+  },
+  "hosts": [
+    {
+      "id": "10545",
+      "name": "Engelux - Cardeal",
+      "graphs": [
+        {
+          "id": "2469",
+          "name": "*CPU",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "2470",
+          "name": "*Conexoes",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "2471",
+          "name": "*RAM",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "4624",
+          "name": "Disponibilidade - X2",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "4618",
+          "name": "Trafego - X0 (Portshield Host)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "4619",
+          "name": "Trafego - X1 (WAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "4620",
+          "name": "Trafego - X2 (WAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "4621",
+          "name": "Trafego - X3 (Portshielded To X0)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        }
+      ]
+    },
+    {
+      "id": "10546",
+      "name": "Engelux - Matriz",
+      "graphs": [
+        {
+          "id": "2475",
+          "name": "*CPU",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "2476",
+          "name": "*Conexoes",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "2477",
+          "name": "*RAM",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "4006",
+          "name": "Disponibilidade - X1",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "4007",
+          "name": "Disponibilidade - X2",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "7569",
+          "name": "Disponibilidade - X3",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "8732",
+          "name": "Disponibilidade - X4",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3343",
+          "name": "Trafego - X0 (LAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3344",
+          "name": "Trafego - X1 (WAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "3345",
+          "name": "Trafego - X2 (WAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "7568",
+          "name": "Trafego - X3 (WAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "8731",
+          "name": "Trafego - X4 (WAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "11498",
+          "name": "Trafego - X6 (LAN)",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "incidents": {
+      "enabled": false,
+      "value": 0
+    },
+    "openProblems": {
+      "enabled": false,
+      "value": [],
+      "columns": [
+        "name",
+        "severity",
+        "tags",
+        "clock"
+      ]
+    },
+    "topTriggers": {
+      "enabled": false,
+      "value": [],
+      "chartType": "bar"
+    }
+  },
+  "emails": [
+    "allanmagalhaes@engelux.com.br",
+    "tec@athenasecurity.com.br",
+    "comercial@athenasecurity.com.br"
+  ],
+  "frequency": "weekly",
+  "logo_filename": "logohostgroup39.jpg",
+  "analyst": "Leonardo Oltramari",
+  "comments": "",
+  "last_generated": "",
+  "last_sent_period": "2025-33",
+  "last_sent": "2025-08-25T12:58:05.544494"
+}

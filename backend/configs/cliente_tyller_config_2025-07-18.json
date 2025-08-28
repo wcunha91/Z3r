@@ -1,0 +1,126 @@
+{
+  "hostgroup": {
+    "id": "100",
+    "name": "Cliente/Tyller"
+  },
+  "hosts": [
+    {
+      "id": "10811",
+      "name": "Tyller - Matriz",
+      "graphs": [
+        {
+          "id": "9147",
+          "name": "CPU",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "9150",
+          "name": "Conexoes",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "9157",
+          "name": "RAM",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "9148",
+          "name": "Disponibilidade do Host",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "9154",
+          "name": "Disponibilidade Porta 2",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "9166",
+          "name": "Trafego - Port2",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "9155",
+          "name": "Disponibilidade Porta 3",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "9167",
+          "name": "Trafego - Port3",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "9156",
+          "name": "Disponibilidade Porta 4",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "9168",
+          "name": "Trafego - Port4",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "9152",
+          "name": "Disponibilidade todos links",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "9165",
+          "name": "Trafego - Port1",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "9171",
+          "name": "Trafego - Port7",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "incidents": {
+      "enabled": false,
+      "value": 0
+    },
+    "openProblems": {
+      "enabled": false,
+      "value": [],
+      "columns": [
+        "name",
+        "severity",
+        "tags",
+        "clock"
+      ]
+    },
+    "topTriggers": {
+      "enabled": false,
+      "value": [],
+      "chartType": "bar"
+    }
+  },
+  "emails": [
+    "carlos.bueno@ofatech.com.br",
+    "tec@athenasecurity.com.br",
+    "loltramari@athenasecurity.com.br",
+    "comercial@athenasecurity.com.br"
+  ],
+  "frequency": "weekly",
+  "logo_filename": "",
+  "analyst": "Leonardo Oltramari",
+  "comments": "",
+  "last_generated": "",
+  "last_sent_period": "2025-33",
+  "last_sent": "2025-08-25T12:53:29.384426"
+}

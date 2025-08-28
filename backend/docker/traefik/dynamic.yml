@@ -1,0 +1,13 @@
+# Middlewares globais do Traefik (headers de segurança + compressão)
+http:
+  middlewares:
+    sec-headers:
+      headers:
+        frameDeny: true
+        contentTypeNosniff: true
+        browserXSSFilter: true
+        referrerPolicy: "no-referrer-when-downgrade"
+        stsSeconds: 31536000
+        stsIncludeSubdomains: true
+    compress:
+      compress: {}

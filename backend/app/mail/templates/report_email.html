@@ -1,0 +1,29 @@
+<body>
+    <div class="container">
+        {% if logo_base64 %}
+            <div style="text-align: center; margin-bottom: 18px;">
+                <img src="{{ logo_base64 }}" alt="Logo Athena" width="120" style="max-width:160px; max-height:80px; border-radius:6px;">
+            </div>
+        {% endif %}
+
+        <div class="titulo">Olá,</div>
+        <div class="info">Segue em anexo o relatório gerado pelo <b>Athena Reports</b>.</div>
+        {% if hostgroup_name %}
+            <div class="info"><span class="detalhe">Hostgroup:</span> {{ hostgroup_name }}</div>
+        {% endif %}
+        {% if periodo %}
+            <div class="info"><span class="detalhe">Período:</span> {{ periodo }}</div>
+        {% endif %}
+        {% if analyst %}
+            <div class="info"><span class="detalhe">Analista Responsável:</span> {{ analyst }}</div>
+        {% endif %}
+        {% if comments %}
+            <div class="info"><span class="detalhe">Comentários:</span> {{ comments }}</div>
+        {% endif %}
+        <div class="aviso">Este é um envio automático. Em caso de dúvidas, entre em contato com o suporte Athena.</div>
+        <div class="assinatura">
+            Atenciosamente,<br>
+            <b>Equipe Athena Security</b>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,449 @@
+{
+  "hostgroup": {
+    "id": "82",
+    "name": "Clientes/Keeggo"
+  },
+  "hosts": [
+    {
+      "id": "10690",
+      "name": "Keeggo- Pinheiros",
+      "graphs": [
+        {
+          "id": "11533",
+          "name": "CPU Core 1: Average usage per core",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10784",
+          "name": "FortiGate: Memory usage",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10785",
+          "name": "FortiGate: Memory utilization",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "11506",
+          "name": "Interface internal(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "11515",
+          "name": "Interface internal1(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "11514",
+          "name": "Interface KEEGGO_AWS(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "11517",
+          "name": "Interface ssl.root(SSL VPN interface): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "11519",
+          "name": "Interface wan1(WW_Algar): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        }
+      ]
+    },
+    {
+      "id": "10692",
+      "name": "Keeggo - Odata",
+      "graphs": [
+        {
+          "id": "10893",
+          "name": "CPU Core 1: Average usage per core",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10886",
+          "name": "CPU Core 2: Average usage per core",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10890",
+          "name": "CPU Core 3: Average usage per core",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10889",
+          "name": "CPU Core 4: Average usage per core",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10887",
+          "name": "CPU Core 5: Average usage per core",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10891",
+          "name": "CPU Core 6: Average usage per core",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10892",
+          "name": "CPU Core 7: Average usage per core",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10888",
+          "name": "CPU Core 8: Average usage per core",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10616",
+          "name": "FortiGate: CPU utilization",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10615",
+          "name": "FortiGate: IPS statistics",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10618",
+          "name": "FortiGate: Memory usage",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10619",
+          "name": "FortiGate: Memory utilization",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10811",
+          "name": "HA 1: Bytes processed",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10813",
+          "name": "HA 1: CPU usage",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10809",
+          "name": "HA 1: HA events",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10815",
+          "name": "HA 1: Memory usage",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10817",
+          "name": "HA 1: Network bandwidth usage",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10819",
+          "name": "HA 1: Packets processed",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10812",
+          "name": "HA 2: CPU usage",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10814",
+          "name": "HA 2: Memory usage",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10816",
+          "name": "HA 2: Network bandwidth usage",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10859",
+          "name": "Interface internal1(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10860",
+          "name": "Interface internal4(DARKTRACE): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10864",
+          "name": "Interface internal5(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10845",
+          "name": "Interface LABMOBILE_SA(LABMOBILE_SA): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10858",
+          "name": "Interface LAB_CELULARES(LAB_CELULARES): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10846",
+          "name": "Interface LAN_ODATA(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10847",
+          "name": "Interface RSI_AWS(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10861",
+          "name": "Interface ssl.root(SSL VPN interface): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10862",
+          "name": "Interface VLAN 3160(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10856",
+          "name": "Interface VLAN 3165(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10863",
+          "name": "Interface VLAN_ITAU(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "11057",
+          "name": "Interface VLAN_SANTANDER(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10865",
+          "name": "Interface wan1(ODATA 300MB): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10851",
+          "name": "Interface wan2(CIRION 150MB): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        }
+      ]
+    },
+    {
+      "id": "10691",
+      "name": "Keeggo - AWS",
+      "graphs": [
+        {
+          "id": "10682",
+          "name": "CPU Core 1: Average usage per core",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10589",
+          "name": "FortiGate: CPU utilization",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10590",
+          "name": "FortiGate: Disk usage",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10591",
+          "name": "FortiGate: Memory usage",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10592",
+          "name": "FortiGate: Memory utilization",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10674",
+          "name": "Interface AWS-ZGEN(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10650",
+          "name": "Interface AWS_VPC_CIELO_1(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10634",
+          "name": "Interface AZ_MONITOR(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10680",
+          "name": "Interface BANCO ITAU(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10639",
+          "name": "Interface BANCO PAN(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10675",
+          "name": "Interface CaixaSeguros(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10640",
+          "name": "Interface CIELO(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10645",
+          "name": "Interface CIELO-TEFHOUSE(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "11351",
+          "name": "Interface CLARO_CAMPINAS(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10667",
+          "name": "Interface CNP_SEGURADORA(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10678",
+          "name": "Interface PagSeguro_GLETE(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10657",
+          "name": "Interface RSI-PINHEIROS(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10641",
+          "name": "Interface RSI_ODATA(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10652",
+          "name": "Interface SANTANDER(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10644",
+          "name": "Interface ssl.root(SSL VPN interface): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10655",
+          "name": "Interface USIMINAS(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        },
+        {
+          "id": "10656",
+          "name": "Interface VPN_AWS_OP_01(): Network traffic",
+          "from_time": "2025-08-18 00:00:00",
+          "to_time": "2025-08-24 23:59:59"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "incidents": {
+      "enabled": false,
+      "value": 0
+    },
+    "openProblems": {
+      "enabled": false,
+      "value": [],
+      "columns": [
+        "name",
+        "severity",
+        "tags",
+        "clock"
+      ]
+    },
+    "topTriggers": {
+      "enabled": false,
+      "value": [],
+      "chartType": "bar"
+    }
+  },
+  "emails": [
+    "gustavo.cunha@keeggo.com",
+    "tec@athenasecurity.com.br",
+    "loltramari@athenasecurity.com.br"
+  ],
+  "frequency": "weekly",
+  "logo_filename": "logohostgroup82.jpg",
+  "analyst": "Leonardo Oltramari",
+  "comments": "",
+  "last_generated": "",
+  "last_sent_period": "2025-33",
+  "last_sent": "2025-08-25T13:27:46.099917"
+}

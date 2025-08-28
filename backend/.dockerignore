@@ -1,0 +1,8 @@
+__pycache__
+venv
+.git
+.gitignore
+README.md
+.env
+logs
+reports
